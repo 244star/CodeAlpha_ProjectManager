@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huddle</title>
+  <meta name="description" content="Huddle is a collaborative project board: create projects, assign tasks, comment, and see changes live.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%234f46e5'/%3E%3Crect x='20' y='22' width='16' height='56' rx='6' fill='white'/%3E%3Crect x='44' y='22' width='16' height='38' rx='6' fill='white'/%3E%3Crect x='68' y='22' width='16' height='26' rx='6' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Huddle home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Huddle</span></a>
+    <nav class="topnav" aria-label="Main" id="topnav" hidden>
+      <a href="#/" data-nav="projects">Projects</a>
+      <a href="#/tasks" data-nav="tasks">My tasks</a>
+    </nav>
+    <div class="topbar-end" id="topbar-end"></div>
+  </header>
+
+  <main id="main" aria-live="polite"></main>
+
+  <dialog id="dialog"></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script src="/js/app.js"></script>
+</body>
+</html>

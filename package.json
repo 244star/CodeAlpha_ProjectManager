@@ -1,0 +1,28 @@
+{
+  "name": "codealpha-project-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A collaborative project management tool (Trello/Asana style) built with Express, MySQL and WebSockets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node server/db/seed.js",
+    "test": "node --test",
+    "test:integration": "cross-env RUN_INTEGRATION_TESTS=true node --test tests/integration.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
